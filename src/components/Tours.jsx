@@ -28,6 +28,8 @@ function Tours(props) {
       setIsLoading(!isLoading);
     } catch (err) {
       console.error("error: ", err);
+    } finally {
+      setIsLoading(false);
     }
   };
   useEffect(() => {

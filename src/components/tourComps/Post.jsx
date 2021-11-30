@@ -10,7 +10,7 @@ function Post(props) {
     <div className="single-tour">
       <Preview image={image} />
       <Heading name={name} price={price} />
-      <Info info={info} />
+      <Info info={info} /> 
       <Footer />
     </div>
   );

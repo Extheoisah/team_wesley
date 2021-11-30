@@ -3,9 +3,9 @@ import Delete from './Delete'
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer>
             <Delete/>
-        </div>
+        </footer>
     )
 }
 

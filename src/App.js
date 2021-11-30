@@ -6,9 +6,9 @@ function App() {
   // const [error, catchErr] = useState(null);
 
   return (
-    <>
+    <div >
       <Tours />
-    </>
+    </div>
   );
 }
 

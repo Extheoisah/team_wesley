@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
+import Brand from "./tourComps/Brand";
+import Footer from "./tourComps/Footer";
 import Post from "./tourComps/Post";
 
 // import Brand from "./tourComps/Brand";
@@ -41,16 +43,19 @@ function Tours(props) {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="main">
+        <div className="section">
+          <Brand />
           {tourData.map((data) => {
             const { id, image, info, name, price } = data;
             return (
-              <div key={id}>
-                <h2>{name}</h2>
-                <Post image={image} price={price} name={name} info={info} />
-              </div>
+              <>
+                <div key={id}>
+                  <Post image={image} price={price} name={name} info={info} />
+                </div>
+              </>
             );
           })}
+          <Footer />
         </div>
       )}
     </>

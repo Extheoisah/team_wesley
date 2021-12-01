@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-// import Loading from "./components/Loading";
+import React from "react";
+
 import Tours from "./components/Tours";
 
 function App() {
-  // const [error, catchErr] = useState(null);
-
   return (
     <div >
       <Tours />

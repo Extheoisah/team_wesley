@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function Delete() {
-    return (
-        <button className="delete-btn">
-            Not Interested
-        </button>
-    )
+function Delete(props) {
+  return (
+    <button className="delete-btn" onClick={props.delete} id={props.id}>
+      Not Interested
+    </button>
+  );
 }
 
 export default Delete;
